@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>只穿校服外套里面光着上学_青春纪实影像|校园记忆放映计划</title>
+<meta name="description" content="只穿校服外套里面光着上学——一支以校园日常为底色的青春影像品牌，用镜头记录那些被校服外套包裹的少年心事与真实瞬间。">
+<style>
+  :root{
+    --ink:#1c1b19;
+    --ink-soft:#3a3833;
+    --paper:#f4efe6;
+    --paper-2:#ece4d6;
+    --accent:#c8452f;
+    --accent-soft:#e07a5f;
+    --blue:#2f5f8a;
+    --gold:#c99a3f;
+    --line:rgba(28,27,25,.16);
+    --shadow:0 18px 50px rgba(28,27,25,.14);
+    --radius:18px;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:0;
+    background-image:radial-gradient(rgba(28,27,25,.045) 1px,transparent 1px);
+    background-size:22px 22px;
+    opacity:.6;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3,h4{line-height:1.25;margin:0;font-weight:800;letter-spacing:.01em}
+  p{margin:0 0 1em}
+  .wrap{width:min(var(--maxw),92vw);margin-inline:auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5em;
+    font-size:.76rem;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--accent);font-weight:700;
+  }
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);display:inline-block}
+  .section{padding:96px 0;position:relative;z-index:1}
+  .section-head{max-width:760px;margin-bottom:52px}
+  .section-head h2{font-size:clamp(1.7rem,3.4vw,2.7rem);margin:.4em 0 .5em}
+  .section-head p{color:var(--ink-soft);font-size:1.02rem}
+
+  /* ---------- header ---------- */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:blur(14px);
+    background:rgba(244,239,230,.82);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em}
+  .brand .mark{
+    width:38px;height:38px;border-radius:11px;
+    background:linear-gradient(135deg,var(--accent),var(--gold));
+    display:grid;place-items:center;color:#fff;font-size:.85rem;font-weight:900;
+    box-shadow:0 8px 18px rgba(200,69,47,.32);
+  }
+  .brand small{display:block;font-size:.64rem;letter-spacing:.24em;color:var(--ink-soft);font-weight:600}
+  nav.links{display:flex;gap:26px;font-size:.92rem;font-weight:600}
+  nav.links a{position:relative;padding:6px 0;color:var(--ink-soft)}
+  nav.links a::after{
+    content:"";position:absolute;left:0;bottom:0;height:2px;width:0;
+    background:var(--accent);transition:width .3s ease;
+  }
+  nav.links a:hover{color:var(--ink)}
+  nav.links a:hover::after{width:100%}
+  .nav-cta{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:10px 20px;border-radius:999px;font-size:.88rem;font-weight:700;
+    background:var(--ink);color:var(--paper);transition:transform .25s ease,background .25s;
+  }
+  .nav-cta:hover{transform:translateY(-2px);background:var(--accent)}
+  .burger{display:none;background:none;border:0;font-size:1.4rem;cursor:pointer}
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;overflow:hidden;
+    padding:74px 0 90px;
+    background:
+      radial-gradient(1200px 500px at 82% -8%,rgba(200,69,47,.16),transparent 62%),
+      radial-gradient(900px 420px at 8% 106%,rgba(47,95,138,.16),transparent 60%);
+  }
+  .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center}
+  .hero h1{
+    font-size:clamp(2.3rem,6.2vw,4.6rem);
+    letter-spacing:-.01em;
+    margin:.28em 0 .42em;
+    line-height:1.06;
+  }
+  .hero h1 .hl{
+    display:inline-block;position:relative;color:var(--accent);
+  }
+  .hero h1 .hl::after{
+    content:"";position:absolute;left:-2%;right:-2%;bottom:.06em;height:.26em;
+    background:rgba(201,154,63,.34);z-index:-1;border-radius:4px;
+  }
+  .hero .lead{font-size:1.12rem;color:var(--ink-soft);max-width:33em}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:14px 28px;border-radius:999px;font-weight:700;font-size:.95rem;
+    transition:transform .25s ease,box-shadow .25s ease,background .25s;
+    border:1px solid transparent;cursor:pointer;
+  }
+  .btn.primary{background:var(--accent);color:#fff;box-shadow:0 14px 30px rgba(200,69,47,.3)}
+  .btn.primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(200,69,47,.4)}
+  .btn.ghost{border-color:var(--line);color:var(--ink);background:rgba(255,255,255,.5)}
+  .btn.ghost:hover{transform:translateY(-3px);background:#fff}
+  .hero-stats{display:flex;gap:38px;margin-top:46px;flex-wrap:wrap}
+  .hero-stats .num{font-size:1.7rem;font-weight:900;letter-spacing:-.01em}
+  .hero-stats .num span{color:var(--accent);font-size:1rem}
+  .hero-stats .lbl{font-size:.78rem;letter-spacing:.16em;color:var(--ink-soft);text-transform:uppercase}
+
+  .player-card{
+    position:relative;border-radius:26px;overflow:hidden;
+    background:linear-gradient(160deg,#28251f,#141310);
+    box-shadow:var(--shadow);
+    aspect-ratio:4/4.6;
+    display:flex;flex-direction:column;justify-content:space-between;
+    padding:26px;color:#f4efe6;
+  }
+  .player-card::after{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(420px 260px at 78% 12%,rgba(224,122,95,.55),transparent 62%),
+      radial-gradient(360px 300px at 12% 88%,rgba(47,95,138,.5),transparent 60%);
+    pointer-events:none;
+  }
+  .player-card .top{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
+  .live-dot{width:8px;height:8px;border-radius:50%;background:#7ad67a;display:inline-block;margin-right:8px;box-shadow:0 0 0 0 rgba(122,214,122,.7);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(122,214,122,.6)}70%{box-shadow:0 0 0 12px rgba(122,214,122,0)}100%{box-shadow:0 0 0 0 rgba(122,214,122,0)}}
+  .player-card .mid{position:relative;z-index:2;text-align:center;padding:0 10px}
+  .play-btn{
+    width:82px;height:82px;border-radius:50%;margin:0 auto 22px;
+    display:grid;place-items:center;
+    background:rgba(244,239,230,.14);border:1px solid rgba(244,239,230,.36);
+    backdrop-filter:blur(6px);cursor:pointer;transition:transform .3s,background .3s;
+  }
+  .play-btn:hover{transform:scale(1.08);background:rgba(244,239,230,.24)}
+  .play-btn svg{width:26px;height:26px;fill:#f4efe6;margin-left:4px}
+  .player-card .mid h3{font-size:1.2rem;margin-bottom:.4em}
+  .player-card .mid p{font-size:.85rem;color:rgba(244,239,230,.68);margin:0}
+  .player-card .bottom{position:relative;z-index:2}
+  .wave{display:flex;align-items:flex-end;gap:3px;height:38px;margin-bottom:16px}
+  .wave i{flex:1;background:linear-gradient(180deg,var(--accent-soft),var(--gold));border-radius:2px;opacity:.85;animation:bounce 1.6s ease-in-out infinite}
+  @keyframes bounce{0%,100%{height:14%}50%{height:100%}}
+  .player-meta{display:flex;justify-content:space-between;font-size:.72rem;letter-spacing:.1em;color:rgba(244,239,230,.6)}
+
+  /* ---------- marquee ---------- */
+  .marquee{
+    border-block:1px solid var(--line);
+    background:var(--paper-2);
+    overflow:hidden;padding:16px 0;
+  }
+  .marquee-track{display:flex;gap:48px;white-space:nowrap;animation:scrollx 34s linear infinite;width:max-content}
+  .marquee-track span{font-size:.86rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+  .marquee-track span::after{content:"✦";margin-left:48px;color:var(--accent)}
+  @keyframes scrollx{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---------- about ---------- */
+  .about-grid{display:grid;grid-template-columns:.94fr 1.06fr;gap:60px;align-items:start}
+  .about-text p{color:var(--ink-soft);font-size:1.02rem}
+  .about-quote{
+    margin:34px 0 0;padding:24px 26px;border-left:4px solid var(--accent);
+    background:rgba(255,255,255,.55);border-radius:0 14px 14px 0;
+    font-size:1.06rem;font-weight:600;line-height:1.7;
+  }
+  .about-quote cite{display:block;margin-top:12px;font-size:.8rem;font-style:normal;letter-spacing:.14em;color:var(--ink-soft);text-transform:uppercase}
+  .pillars{display:grid;gap:18px}
+  .pillar{
+    display:grid;grid-template-columns:56px 1fr;gap:18px;
+    padding:22px 24px;border-radius:var(--radius);
+    background:rgba(255,255,255,.6);border:1px solid var(--line);
+    transition:transform .3s ease,box-shadow .3s ease,background .3s;
+  }
+  .pillar:hover{transform:translateY(-4px);box-shadow:var(--shadow);background:#fff}
+  .pillar .no{
+    width:56px;height:56px;border-radius:14px;display:grid;place-items:center;
+    font-weight:900;font-size:1.1rem;color:#fff;
+    background:linear-gradient(140deg,var(--blue),#4a86b8);
+  }
+  .pillar:nth-child(2) .no{background:linear-gradient(140deg,var(--accent),var(--accent-soft))}
+  .pillar:nth-child(3) .no{background:linear-gradient(140deg,var(--gold),#e0bd6a)}
+  .pillar h3{font-size:1.05rem;margin-bottom:.3em}
+  .pillar p{margin:0;font-size:.92rem;color:var(--ink-soft)}
+
+  /* ---------- episodes ---------- */
+  .episodes{background:var(--paper-2);border-block:1px solid var(--line)}
+  .filter-bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+  .chip{
+    padding:9px 20px;border-radius:999px;border:1px solid var(--line);
+    background:transparent;font-size:.86rem;font-weight:700;cursor:pointer;
+    color:var(--ink-soft);transition:all .25s ease;
+  }
+  .chip.active,.chip:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .ep-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .ep-card{
+    border-radius:var(--radius);overflow:hidden;background:#fff;
+    border:1px solid var(--line);display:flex;flex-direction:column;
+    transition:transform .35s ease,box-shadow .35s ease;
+  }
+  .ep-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
+  .ep-thumb{position:relative;aspect-ratio:16/10;overflow:hidden}
+  .ep-thumb .art{position:absolute;inset:0;transition:transform .6s ease}
+  .ep-card:hover .ep-thumb .art{transform:scale(1.07)}
+  .ep-1 .art{background:linear-gradient(140deg,#2f5f8a,#6ea3c9 55%,#c9dcea)}
+  .ep-2 .art{background:linear-gradient(140deg,#c8452f,#e07a5f 55%,#f2c6a8)}
+  .ep-3 .art{background:linear-gradient(140deg,#6b5a3e,#c99a3f 60%,#ecd9a8)}
+  .ep-4 .art{background:linear-gradient(140deg,#3c4a3f,#7da07f 58%,#cfe0c9)}
+  .ep-5 .art{background:linear-gradient(140deg,#4a3550,#8d6b98 58%,#d9c8de)}
+  .ep-6 .art{background:linear-gradient(140deg,#2b2b2b,#5c5c5c 60%,#b8b4aa)}
+  .ep-thumb .art::after{
+    content:"";position:absolute;inset:0;
+    background-image:radial-gradient(rgba(255,255,255,.22) 1px,transparent 1px);
+    background-size:14px 14px;opacity:.55;
+  }
+  .ep-dur{
+    position:absolute;right:12px;bottom:12px;z-index:2;
+    background:rgba(20,19,16,.78);color:#f4efe6;font-size:.72rem;
+    padding:4px 10px;border-radius:6px;letter-spacing:.06em;
+  }
+  .ep-tag{
+    position:absolute;left:12px;top:12px;z-index:2;
+    background:rgba(244,239,230,.9);color:var(--ink);font-size:.7rem;
+    padding:4px 12px;border-radius:999px;letter-spacing:.12em;font-weight:800;
+  }
+  .ep-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+  .ep-body h3{font-size:1.06rem;margin-bottom:.5em}
+  .ep-body p{font-size:.9rem;color:var(--ink-soft);margin:0 0 18px}
+  .ep-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;font-size:.78rem;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:14px}
+  .ep-foot .watch{font-weight:800;color:var(--accent);display:inline-flex;align-items:center;gap:6px}
+  .ep-card.hide{display:none}
+
+  /* ---------- numbers / impact ---------- */
+  .impact{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+  .impact::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(700px 420px at 88% 8%,rgba(200,69,47,.4),transparent 62%),
+      radial-gradient(620px 420px at 6% 92%,rgba(47,95,138,.42),transparent 62%);
+    pointer-events:none;
+  }
+  .impact .wrap{position:relative;z-index:1}
+  .impact .section-head p{color:rgba(244,239,230,.72)}
+  .impact .eyebrow{color:var(--accent-soft)}
+  .impact .eyebrow::before{background:var(--accent-soft)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:20px}
+  .stat{border-top:1px solid rgba(244,239,230,.22);padding-top:22px}
+  .stat .n{font-size:clamp(1.9rem,3.6vw,2.9rem);font-weight:900;letter-spacing:-.02em;line-height:1.1}
+  .stat .n em{font-style:normal;color:var(--gold);font-size:.5em;margin-left:4px}
+  .stat .t{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,239,230,.62);margin-top:8px}
+
+  /* ---------- timeline / process ---------- */
+  .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:20px;counter-reset:step}
+  .flow-item{padding:0 22px 0 0;position:relative}
+  .flow-item::before{
+    counter-increment:step;content:"0" counter(step);
+    display:block;font-size:.8rem;font-weight:900;letter-spacing:.2em;color:var(--accent);margin-bottom:12px;
+  }
+  .flow-item h3{font-size:1.04rem;margin-bottom:.5em}
+  .flow-item p{font-size:.9rem;color:var(--ink-soft);margin:0}
+  .flow-item::after{
+    content:"";position:absolute;right:14px;top:6px;width:8px;height:8px;border-radius:50%;
+    background:var(--accent);opacity:.5;
+  }
+  .flow-item:last-child::after{display:none}
+
+  /* ---------- voices / community ---------- */
+  .voices{background:var(--paper-2);border-block:1px solid var(--line)}
+  .voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .voice{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px 26px;display:flex;flex-direction:column;gap:18px;
+    transition:transform .3s ease,box-shadow .3s ease;
+  }
+  .voice:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .voice .quote{font-size:.98rem;line-height:1.8;color:var(--ink-soft);margin:0}
+  .voice .quote::before{content:"“";font-size:2.2rem;color:var(--accent);line-height:0;vertical-align:-.32em;margin-right:4px;font-weight:900}
+  .who{display:flex;align-items:center;gap:14px;margin-top:auto;border-top:1px solid var(--line);padding-top:18px}
+  .avatar{
+    width:44px;height:44px;border-radius:50%;display:grid;place-items:center;
+    color:#fff;font-weight:900;font-size:.9rem;letter-spacing:.02em;flex-shrink:0;
+  }
+  .a1{background:linear-gradient(140deg,#2f5f8a,#6ea3c9)}
+  .a2{background:linear-gradient(140deg,#c8452f,#e07a5f)}
+  .a3{background:linear-gradient(140deg,#8a6b2f,#c99a3f)}
+  .who .name{font-size:.92rem;font-weight:800}
+  .who .role{font-size:.76rem;color:var(--ink-soft);letter-spacing:.08em}
+
+  /* ---------- faq ---------- */
+  .faq-list{display:grid;gap:14px;max-width:900px}
+  .faq-item{border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.58);overflow:hidden;transition:background .3s}
+  .faq-item.open{background:#fff}
+  .faq-q{
+    width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;
+    padding:20px 24px;background:none;border:0;cursor:pointer;text-align:left;
+    font-size:1rem;font-weight:700;color:var(--ink);font-family:inherit;
+  }
+  .faq-q .icon{
+    width:28px;height:28px;border-radius:50%;border:1px solid var(--line);
+    display:grid;place-items:center;font-weight:900;transition:transform .3s,background .3s,color .3s;flex-shrink:0;
+  }
+  .faq-item.open .faq-q .icon{transform:rotate(45deg);background:var(--accent);color:#fff;border-color:var(--accent)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+  .faq-a p{padding:0 24px 22px;margin:0;font-size:.94rem;color:var(--ink-soft)}
+
+  /* ---------- newsletter / cta ---------- */
+  .cta-band{position:relative;overflow:hidden;border-radius:26px;padding:64px 56px;background:linear-gradient(135deg,#1c1b19,#2f2c26 60%,#3a3329);color:var(--paper)}
+  .cta-band::before{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(600px 320px at 86% 8%,rgba(200,69,47,.5),transparent 65%),
+               radial-gradient(520px 300px at 4% 100%,rgba(47,95,138,.5),transparent 62%);
+    pointer-events:none;
+  }
+  .cta-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:center}
+  .cta-inner h2{font-size:clamp(1.7rem,3.2vw,2.5rem);margin-bottom:.5em}
+  .cta-inner p{color:rgba(244,239,230,.74);margin:0}
+  .sub-form{display:flex;gap:10px;flex-wrap:wrap}
+  .sub-form input{
+    flex:1;min-width:200px;padding:15px 20px;border-radius:999px;border:1px solid rgba(244,239,230,.26);
+    background:rgba(244,239,230,.1);color:var(--paper);font-size:.94rem;font-family:inherit;outline:none;
+    transition:border .25s,background .25s;
+  }
+  .sub-form input::placeholder{color:rgba(244,239,230,.45)}
+  .sub-form input:focus{border-color:var(--accent-soft);background:rgba(244,239,230,.16)}
+  .sub-form button{
+    padding:15px 30px;border-radius:999px;border:0;background:var(--accent);color:#fff;
+    font-weight:800;font-size:.94rem;cursor:pointer;transition:transform .25s,box-shadow .25s;font-family:inherit;
+  }
+  .sub-form button:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(200,69,47,.45)}
+  .form-note{font-size:.76rem;color:rgba(244,239,230,.5);margin-top:12px}
+  .form-note .ok{color:#8fd68f;font-weight:700}
+
+  /* ---------- footer ---------- */
+  footer.site{background:var(--ink);color:rgba(244,239,230,.72);padding:70px 0 34px;position:relative;z-index:1}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+  .foot-brand .brand{color:var(--paper);margin-bottom:16px}
+  .foot-brand p{font-size:.88rem;max-width:26em;color:rgba(244,239,230,.58)}
+  .foot-col h4{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,239,230,.5);margin-bottom:16px}
+  .foot-col a{display:block;font-size:.9rem;padding:5px 0;color:rgba(244,239,230,.72);transition:color .25s}
+  .foot-col a:hover{color:var(--accent-soft)}
+  .foot-bottom{
+    margin-top:52px;padding-top:24px;border-top:1px solid rgba(244,239,230,.14);
+    display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.8rem;color:rgba(244,239,230,.46);
+  }
+  .foot-bottom .tags span{margin-right:14px}
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:1000px){
+    .hero-grid,.about-grid,.cta-inner{grid-template-columns:1fr;gap:44px}
+    .ep-grid,.voice-grid{grid-template-columns:repeat(2,1fr)}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .flow{grid-template-columns:repeat(2,1fr);gap:34px 0}
+    .flow-item:nth-child(2)::after{display:none}
+    .foot-grid{grid-template-columns:1fr 1fr}
+    .player-card{aspect-ratio:16/11}
+  }
+  @media (max-width:720px){
+    .section{padding:70px 0}
+    nav.links{display:none}
+    nav.links.show{
+      display:flex;flex-direction:column;position:absolute;top:70px;left:0;right:0;
+      background:var(--paper);border-bottom:1px solid var(--line);padding:18px 5vw;gap:14px;
+    }
+    .burger{display:block}
+    .nav-cta{display:none}
+    .ep-grid,.voice-grid{grid-template-columns:1fr}
+    .stats{grid-template-columns:1fr 1fr;gap:24px}
+    .flow{grid-template-columns:1fr}
+    .flow-item::after{display:none}
+    .cta-band{padding:44px 26px}
+    .foot-grid{grid-template-columns:1fr}
+    .hero-stats{gap:24px}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="mark">校</span>
+      <span>校服外套<small>SCHOOL COAT STUDIO</small></span>
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="#about">关于我们</a>
+      <a href="#episodes">影像片单</a>
+      <a href="#impact">数据足迹</a>
+      <a href="#process">创作流程</a>
+      <a href="#voices">社区回声</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="nav-cta" href="#subscribe">加入放映团</a>
+    <button class="burger" id="burger" aria-label="打开菜单">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">青春纪实影像 · 校园日常</span>
+        <h1>只穿校服外套<br><span class="hl">里面光着上学</span></h1>
+        <p class="lead">我们是一支专注校园日常的纪实影像团队。镜头对准清晨六点的校门、午后空荡的走廊、放学后还没散尽的人群——记录那些被校服外套包裹着的、真实而笨拙的少年时刻。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#episodes">观看最新片单 →</a>
+          <a class="btn ghost" href="#about">了解我们</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="num">218<span>期</span></div>
+            <div class="lbl">已上线影像</div>
+          </div>
+          <div>
+            <div class="num">4.6<span>亿</span></div>
+            <div class="lbl">累计播放</div>
+          </div>
+          <div>
+            <div class="num">37<span>城</span></div>
+            <div class="lbl">校园取景地</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-card reveal">
+        <div class="top">
+          <span><span class="live-dot"></span>正在放映</span>
+          <span>EP.218</span>
+        </div>
+        <div class="mid">
+          <button class="play-btn" id="playBtn" aria-label="播放预告">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <h3>外套之下</h3>
+          <p>一支关于校服、夏天与成长的三分钟短片</p>
+        </div>
+        <div class="bottom">
+          <div class="wave" id="wave"></div>
+          <div class="player-meta">
+            <span>03:12</span>
+            <span>4K · 校园纪实</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>校服外套</span><span>校园纪实</span><span>少年心事</span><span>夏日走廊</span>
+      <span>放学以后</span><span>青春影像</span><span>真实瞬间</span><span>成长切片</span>
+      <span>校服外套</span><span>校园纪实</span><span>少年心事</span><span>夏日走廊</span>
+      <span>放学以后</span><span>青春影像</span><span>真实瞬间</span><span>成长切片</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">关于我们</span>
+        <h2>把校服外套里的故事，认真地拍下来</h2>
+        <p>「只穿校服外套里面光着上学」不是一句玩笑，而是一种状态——外套是少年人最外层的体面，里面藏着还没学会表达的自己。我们想做的，就是把这层外套轻轻掀开一角，让镜头看见真实。</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>团队成立于 2019 年，最初只是几个毕业生回母校拍了一支三分钟的短片。那支片子里没有台词，只有早读的铃声、被风掀起的校服下摆、以及食堂窗口前排起的长队。视频上线后，评论区涌进了成千上万条「这就是我的高中」。</p>
+          <p>从那之后，我们明确了方向：不做宏大的青春叙事，只记录具体的人、具体的走廊、具体的下午。每一期影像都由实地取景完成，坚持自然光、真实环境声、非职业演员，保留镜头里的呼吸感和不完美。</p>
+          <p>如今，「校服外套」已经成长为一个持续更新的校园影像品牌，覆盖 37 座城市的 120 余所学校，与上百位学生创作者保持长期合作。我们相信，最动人的青春永远不在剧本里，而在校服外套被风吹起的那一秒。</p>
+          <blockquote class="about-quote">
+            外套是统一的，里面的人生各不相同。
+            <cite>—— 校服外套影像团队 · 创作手记</cite>
+          </blockquote>
+        </div>
+        <div class="pillars">
+          <div class="pillar reveal">
+            <div class="no">01</div>
+            <div>
+              <h3>真实取景，拒绝摆拍</h3>
+              <p>所有画面均在真实校园环境中完成，保留自然光线与环境音，让每一次呼吸都可被听见。</p>
+            </div>
+          </div>
+          <div class="pillar reveal">
+            <div class="no">02</div>
+            <div>
+              <h3>学生共创，持续更新</h3>
+              <p>每期开放学生投稿与联合创作通道，让镜头背后的视角来自真正身处校园的人。</p>
+            </div>
+          </div>
+          <div class="pillar reveal">
+            <div class="no">03</div>
+            <div>
+              <h3>克制表达，长期主义</h3>
+              <p>不追逐热点，不制造焦虑，用稳定的更新节奏记录一代又一代人的校园切片。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EPISODES -->
+  <section class="section episodes" id="episodes">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">影像片单</span>
+        <h2>正在放映的校园切片</h2>
+        <p>每周三更新。每一期都是一段独立的校园现场，你可以从任意一集开始看。</p>
+      </div>
+      <div class="filter-bar reveal">
+        <button class="chip active" data-filter="all">全部</button>
+        <button class="chip" data-filter="corridor">走廊</button>
+        <button class="chip" data-filter="summer">夏天</button>
+        <button class="chip" data-filter="after">放学后</button>
+      </div>
+      <div class="ep-grid" id="epGrid">
+
+        <article class="ep-card ep-1 reveal" data-cat="corridor">
+          <div class="ep-thumb">
+            <div class="art"></div>
+            <span class="ep-tag">走廊</span>
+            <span class="ep-dur">03:12</span>
+          </div>
+          <div class="ep-body">
+            <h3>清晨六点二十的走廊</h3>
+            <p>天还没完全亮，校服外套的拉链拉到最上面，脚步声在空走廊里回响。</p>
+            <div class="ep-foot"><span>EP.218</span><span class="watch">观看 →</span></div>
+          </div>
+        </article>
+
+        <article class="ep-card ep-2 reveal" data-cat="summer">
+          <div class="ep-thumb">
+            <div class="art"></div>
+            <span class="ep-tag">夏天</span>
+            <span class="ep-dur">04:05</span>
+          </div>
+          <div class="ep-body">
+            <h3>外套与三十七度</h3>
+            <p>夏天的校服外套是一种执着。风扇转了三圈，没人愿意先脱下来。</p>
+            <div class="ep-foot"><span>EP.217</span><span class="watch">观看 →</span></div>
+          </div>
+        </article>
+
+        <article class="ep-card ep-3 reveal" data-cat="after">
+          <div class="ep-thumb">
+            <div class="art"></div>
+            <span class="ep-tag">放学后</span>
+            <span class="ep-dur">02:48</span>
+          </div>
+          <div class="ep-body">
+            <h3>最后一节课的下课铃</h3>
+            <p>铃声响起的那一秒，整栋楼好像同时松了一口气，外套被搭在肩上。</p>
+            <div class="ep-foot"><span>EP.216</span><span class="watch">观看 →</span></div>
+          </div>
+        </article>
+
+        <article class="ep-card ep-4 reveal" data-cat="corridor">
+          <div class="ep-thumb">
+            <div class="art"></div>
+            <span class="ep-tag">走廊</span>
+            <span class="ep-dur">05:21</span>
+          </div>
+          <div class="ep-body">
+            <h3>值日生的整个下午</h3>
+            <p>拖把、水桶、被夕阳拉长的影子，还有一件挂在窗边晾干的外套。</p>
+            <div class="ep-foot"><span>EP.215</span><span class="watch">观看 →</span></div>
+          </div>
+        </article>
+
+        <article class="ep-card ep-5 reveal" data-cat="summer">
+          <div class="ep-thumb">
+            <div class="art"></div>
+            <span class="ep-tag">夏天</span>
+            <span class="ep-dur">03:37</span>
+          </div>
+          <div class="ep-body">
+            <h3>操场边的那棵梧桐</h3>
+            <p>树荫、汽水、被卷起来当扇子的作业本，夏天在操场上慢慢化开。</p>
+            <div class="ep-foot"><span>EP.214</span><span class="watch">观看 →</span></div>
+          </div>
+        </article>
+
+        <article class="ep-card ep-6 reveal" data-cat="after">
+          <div class="ep-thumb">
+            <div class="art"></div>
+            <span class="ep-tag">放学后</span>
+            <span class="ep-dur">04:44</span>
+          </div>
+          <div class="ep-body">
+            <h3>校门口等到天黑</h3>
+            <p>没人先走，也没有人说话。外套被风鼓起又落下，像一句没说完的话。</p>
+            <div class="ep-foot"><span>EP.213</span><span class="watch">观看 →</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="section impact" id="impact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">数据足迹</span>
+        <h2>被看见的，不止一件外套</h2>
+        <p>从第一支短片到今天，感谢每一个在镜头前停留过的人。</p>
+      </div>
+      <div class="stats">
+        <div class="stat reveal"><div class="n" data-count="218">218</div><div class="t">已上线影像</div></div>
+        <div class="stat reveal"><div class="n" data-count="462">4.62<em>亿</em></div><div class="t">累计播放</div></div>
+        <div class="stat reveal"><div class="n" data-count="120">120<em>+</em></div><div class="t">合作学校</div></div>
+        <div class="stat reveal"><div class="n" data-count="37">37</div><div class="t">取景城市</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">创作流程</span>
+        <h2>一支校园短片是怎么拍出来的</h2>
+        <p>我们把每一期的制作拆成四个清晰的阶段，也欢迎学生创作者全程参与。</p>
+      </div>
+      <div class="flow">
+        <div class="flow-item reveal">
+          <h3>选题与踩点</h3>
+          <p>先走进校园，观察一周的日常节奏，再决定要记录什么。选题来自真实场景，而不是策划案上的想象。</p>
+        </div>
+        <div class="flow-item reveal">
+          <h3>轻量拍摄</h3>
+          <p>小团队、自然光、尽量不打扰课堂。我们用等待的方式拍摄，让人物忘记镜头的存在。</p>
+        </div>
+        <div class="flow-item reveal">
+          <h3>剪辑与声音</h3>
+          <p>保留环境声、呼吸声与远处的铃声，克制音乐的使用，让画面自己说话。</p>
+        </div>
+        <div class="flow-item reveal">
+          <h3>上线与共创</h3>
+          <p>每周三上线，同步开放评论区与投稿通道，下一期选题常常就来自观众的一条留言。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOICES -->
+  <section class="section voices" id="voices">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">社区回声</span>
+        <h2>看片的人，也在镜头里</h2>
+        <p>每一条留言我们都会读。它们构成了这个品牌继续拍下去的底气。</p>
+      </div>
+      <div class="voice-grid">
+        <div class="voice reveal">
+          <p class="quote">看到第三分钟的时候突然想起来，我高中的校服外套也是这样，永远拉链拉到一半。谢谢你们把那种说不清的感觉拍出来了。</p>
+          <div class="who">
+            <div class="avatar a1">林</div>
+            <div>
+              <div class="name">林同学</div>
+              <div class="role">观众 · 杭州</div>
+            </div>
+          </div>
+        </div>
+        <div class="voice reveal">
+          <p class="quote">作为老师看完了整季，才发现自己每天站在讲台上，其实错过了走廊里那么多细节。片子很温和，但很有力量。</p>
+          <div class="who">
+            <div class="avatar a2">周</div>
+            <div>
+              <div class="name">周老师</div>
+              <div class="role">合作学校 · 成都</div>
+            </div>
+          </div>
+        </div>
+        <div class="voice reveal">
+          <p class="quote">我把我们班的日常拍下来投了稿，没想到真的被选中了。能在片尾看到自己学校的名字，那种感觉特别奇妙。</p>
+          <div class="who">
+            <div class="avatar a3">陈</div>
+            <div>
+              <div class="name">陈同学</div>
+              <div class="role">学生创作者 · 青岛</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">常见问题</span>
+        <h2>你可能想知道的</h2>
+        <p>关于观看、投稿与合作，这里有一些常见解答。</p>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item reveal">
+          <button class="faq-q">影像在哪里可以观看？<span class="icon">+</span></button>
+          <div class="faq-a"><p>所有正片会在品牌官网、官方视频频道与微信公众号同步上线，每周三晚八点更新。部分短片还提供 4K 高清版本供校园放映活动申请使用。</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">学生可以投稿自己的校园影像吗？<span class="icon">+</span></button>
+          <div class="faq-a"><p>可以。我们长期开放学生共创通道，支持手机拍摄的素材投稿。通过初审的作品会进入联合剪辑环节，作者署名将出现在片尾，并参与当期稿酬分成。</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">拍摄会打扰正常上课吗？<span class="icon">+</span></button>
+          <div class="faq-a"><p>不会。团队坚持轻量拍摄原则，所有取景均提前与校方沟通，避开考试与重要课程，使用自然光与手持设备，尽量降低存在感。</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">如何申请成为合作学校？<span class="icon">+</span></button>
+          <div class="faq-a"><p>通过页面底部的联系方式提交学校基本信息和意向说明，我们会在五个工作日内回复，并安排一次线上沟通，确认选题方向与拍摄时间。</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">影像里的学生是否都经过授权？<span class="icon">+</span></button>
+          <div class="faq-a"><p>所有出镜学生及其监护人均签署了肖像使用授权书，未成年人出镜内容会在上线前再次确认。我们尊重每一位参与者的意愿，任何阶段都可申请撤回。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" id="subscribe" style="padding-top:20px">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <div class="cta-inner">
+          <div>
+            <span class="eyebrow">加入放映团</span>
+            <h2>每周三，一起看看校园</h2>
+            <p>订阅我们的更新提醒，获取最新片单、幕后花絮和学生共创招募信息。不打扰，只在有新片的时候出现。</p>
+          </div>
+          <div>
+            <form class="sub-form" id="subForm">
+              <input type="email" id="subEmail" placeholder="留下你的邮箱" required>
+              <button type="submit">立即订阅</button>
+            </form>
+            <div class="form-note" id="formNote">我们承诺不会发送任何广告，随时可以退订。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">
+          <span class="mark">校</span>
+          <span>校服外套<small>SCHOOL COAT STUDIO</small></span>
+        </div>
+        <p>一支专注校园日常的纪实影像团队。用镜头记录被校服外套包裹着的真实瞬间，让每一段青春都有被看见的机会。</p>
+      </div>
+      <div class="foot-col">
+        <h4>站点导航</h4>
+        <a href="#about">关于我们</a>
+        <a href="#episodes">影像片单</a>
+        <a href="#impact">数据足迹</a>
+        <a href="#process">创作流程</a>
+      </div>
+      <div class="foot-col">
+        <h4>参与方式</h4>
+        <a href="#voices">社区回声</a>
+        <a href="#subscribe">加入放映团</a>
+        <a href="#faq">学生投稿</a>
+        <a href="#faq">合作学校</a>
+      </div>
+      <div class="foot-col">
+        <h4>联系</h4>
+        <a href="#subscribe">hello@schoolcoat.studio</a>
+        <a href="#subscribe">微信公众号 · 校服外套</a>
+        <a href="#subscribe">视频频道 · 校服外套影像</a>
+        <a href="#top">回到顶部</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2024 校服外套影像团队 · 保留所有权利</div>
+      <div class="tags"><span>校园纪实</span><span>青春影像</span><span>真实记录</span></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* 移动端菜单 */
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', function(){
+    navLinks.classList.toggle('show');
+  });
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ navLinks.classList.remove('show'); });
+  });
+
+  /* 片单筛选 */
+  var chips = document.querySelectorAll('.chip');
+  var cards = document.querySelectorAll('.ep-card');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('active'); });
+      chip.classList.add('active');
+      var f = chip.getAttribute('data-filter');
+      cards.forEach(function(card){
+        if(f === 'all' || card.getAttribute('data-cat') === f){
+          card.classList.remove('hide');
+        } else {
+          card.classList.add('hide');
+        }
+      });
+    });
+  });
+
+  /* FAQ 手风琴 */
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.parentElement;
+      var ans = item.querySelector('.faq-a');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(it){
+        it.classList.remove('open');
+        it.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        ans.style.maxHeight = ans.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* 播放按钮与音波 */
+  var playBtn = document.getElementById('playBtn');
+  var wave = document.getElementById('wave');
+  if(wave){
+    for(var i=0;i<48;i++){
+      var bar = document.createElement('i');
+      bar.style.animationDelay = (Math.random()*1.6).toFixed(2)+'s';
+      bar.style.animationDuration = (1.2 + Math.random()*1.2).toFixed(2)+'s';
+      wave.appendChild(bar);
+    }
+  }
+  if(playBtn){
+    playBtn.addEventListener('click', function(){
+      var bars = wave.querySelectorAll('i');
+      var isRunning = bars[0].style.animationPlayState === 'paused';
+      bars.forEach(function(b){ b.style.animationPlayState = isRunning ? 'running' : 'paused'; });
+      playBtn.style.transform = isRunning ? '' : 'scale(.94)';
+      setTimeout(function(){ playBtn.style.transform = ''; }, 220);
+    });
+  }
+
+  /* 订阅表单 */
+  var subForm = document.getElementById('subForm');
+  var subEmail = document.getElementById('subEmail');
+  var formNote = document.getElementById('formNote');
+  subForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var val = subEmail.value.trim();
+    if(!val || val.indexOf('@') < 0){
+      formNote.innerHTML = '<span style="color:#ff9b8a">请输入有效的邮箱地址。</span>';
+      return;
+    }
+    formNote.innerHTML = '<span class="ok">订阅成功！最新片单将发送至 ' + val + '</span>';
+    subEmail.value = '';
+  });
+
+  /* 滚动出现动画 */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        en.target.classList.add('in');
+        io.unobserve(en.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  /* 数字滚动 */
+  function animateCount(el){
+    var target = parseFloat(el.getAttribute('data-count'));
+    var suffix = el.querySelector('em') ? el.querySelector('em').outerHTML : '';
+    var start = 0, dur = 1400, t0 = null;
+    function step(ts){
+      if(!t0) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var now = target * eased;
+      var text;
+      if(target % 1 !== 0){
+        text = now.toFixed(2);
+      } else {
+        text = Math.floor(now).toString();
+      }
+      el.innerHTML = text + suffix;
+      if(p < 1){ requestAnimationFrame(step); }
+    }
+    requestAnimationFrame(step);
+  }
+  var cntIO = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        animateCount(en.target);
+        cntIO.unobserve(en.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.stat .n').forEach(function(el){ cntIO.observe(el); });
+</script>
+
+</body>
+  </html>
